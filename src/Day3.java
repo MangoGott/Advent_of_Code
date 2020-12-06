@@ -11,9 +11,10 @@ public class Day3 {
         int x2 = 0; // R5D1
         int x3 = 0; // R7D1
         int x4 = 0; // R1D2
+
+        int[] slopeList = {1,3,5,7,1};
         boolean varannan = true;
 
-        int y = 0;
         char tree = '#';
         int trees = 0;
         int trees1 = 0;
@@ -38,7 +39,20 @@ public class Day3 {
             */
 
             //Del B
+            //TO DO: Snygg lösning ;9 
+            /*
+            for(int slope :slopeList){
 
+                if(arr[x] == tree){
+                    trees++; 
+                }  
+                x = (x + slope) % width;
+
+            }
+            */
+
+
+            //Ful lösningen
             //R1D1
             if(arr[x] == tree){
                 trees++; 
